@@ -1,0 +1,19 @@
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 作业照片与成品（含教材内容，禁止提交）
+*.jpg
+*.jpeg
+*.png
+*.pdf
+!assets/*.png
+
+# 本地工作产物
+answer/
+work/
