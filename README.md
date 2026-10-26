@@ -29,7 +29,7 @@
 `SKILL.md` 是 Anthropic 在 2025 年底开放的 **Agent Skills 标准**，现在 Claude Code、Codex、Cursor 2.4+、Gemini CLI、GitHub Copilot、Trae、WorkBuddy、豆包 等 40+ 家都读同一份文件。**复制下面任意一句发给你的 AI，它会自己判断目录并装好**：
 
 ```
-帮我安装这个 skill：https://github.com/<你的账号>/homework-photo-answer
+帮我安装这个 skill：https://github.com/DazhiFe/homework-photo-answer
 装到我的个人技能目录（比如 WorkBuddy 是 ~/.workbuddy/skills/、Claude Code 是 ~/.claude/skills/），
 不要装进当前项目文件夹。装完告诉我它叫什么名字、怎么调用。
 ```
@@ -51,7 +51,7 @@
 
 **npx（装到 50+ 个 agent，适合开发者）**
 ```bash
-npx skills add <你的账号>/homework-photo-answer -g -y
+npx skills add DazhiFe/homework-photo-answer -g -y
 npx skills update          # 以后升级
 ```
 用的是 Vercel 开源的 [skills CLI](https://github.com/vercel-labs/skills)（MIT），默认用软链接，一次更新所有 agent 生效。
@@ -67,7 +67,7 @@ zip -r homework-photo-answer.zip . -x "*.git*" -x "*.venv*" -x "*.jpg" -x "*.pdf
 或在 Releases 里下载现成的 `homework-photo-answer.zip`（见下方「发版」）。
 
 > 豆包还支持一种更懒的方式：直接在对话框发
-> `帮我创建技能：https://github.com/<账号>/homework-photo-answer/releases/latest/download/homework-photo-answer.zip`
+> `帮我创建技能：https://github.com/DazhiFe/homework-photo-answer/releases/latest/download/homework-photo-answer.zip`
 > 它会自己下载、读 SKILL.md、装好并回报。
 
 ### 环境（Python）
